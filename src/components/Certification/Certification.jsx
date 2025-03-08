@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants"; // Assuming this contains the fadeIn variant
 import { FaBuilding, FaCertificate } from "react-icons/fa"; // Importing the certificate icon from react-icons
 import { AiFillSafetyCertificate } from "react-icons/ai";
-import AnkitRs from "../../../public/images/Ankit - Resume01.pdf";
+import AnkitRs from "../../assets/Ankit - Resume01.pdf";
+import ankitcf from "../../assets/ethnusC.pdf";
 
 const Certification = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -74,7 +75,11 @@ const Certification = () => {
             Time Period: Aug2024 - Feb2025
           </motion.p>
           <button
-            onClick={() => window.open("../../../public/images/ethnusC.pdf")} // Link to the certificate PDF or image
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1dI1w4B1xzKDTjWSCp0fcQ95nmEYUra_5/view?usp=drivesdk"
+              )
+            } // Link to the certificate PDF or image
             className="text-orange  font-semibold hover:underline text-center mx-auto"
           >
             View Certificate

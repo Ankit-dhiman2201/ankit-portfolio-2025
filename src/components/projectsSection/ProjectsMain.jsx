@@ -2,42 +2,46 @@ import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
-//import project1 from "../../../public/images/flight-track.png";
+import project1 from "../../assets/flight-track.png";
+import project2 from "../../assets/static-project.png";
+import project3 from "../../assets/portfoliopp.png";
+import project4 from "../../assets/project4.png";
+import project5 from "../../assets/age_cacl.png";
 
 const projects = [
   {
     name: "Flight-Tracker Website",
     year: "Jan2025",
     align: "right",
-    image: "../../public/images/flight-track.png",
+    image: [project1],
     link: "https://merry-pithivier-76a1e3.netlify.app/",
   },
   {
     name: "Hosted a static website using Amazon S3",
     year: "Dec2024",
     align: "left",
-    image: "../../public/images/static-project.png",
+    image: [project2],
     link: "#",
   },
   {
     name: "Portfolio Project",
     year: "Sept2024",
     align: "right",
-    image: "../../public/images/portfoliopp.png",
+    image: [project3],
     link: "https://ankit-portfolio-2201.netlify.app/",
   },
   {
     name: " AWS Capstone Project",
     year: "Sept2024",
     align: "left",
-    image: "../../public/images/project4.png",
+    image: [project4],
     link: "http://capstoneelb-1537556103.us-east-1.elb.amazonaws.com/",
   },
   {
     name: "Age-calculator",
     year: "Feb2025",
     align: "right",
-    image: "../../public/images/age_cacl.png",
+    image: [project5],
     link: "https://dapper-peony-07165f.netlify.app/",
   },
 ];
